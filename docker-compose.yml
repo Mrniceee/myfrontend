@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  web:
+    image: myfrontend:latest
+    container_name: my_front_server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app
